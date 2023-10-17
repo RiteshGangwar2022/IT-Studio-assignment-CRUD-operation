@@ -11,3 +11,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2b8463;
+}
+
+
+#content {
+  height: 67vh;
+  padding: 5px;
+  margin-bottom: 10px;
+  overflow:auto;
+};
+
+/* Styles for the table */
+#customers {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#customers th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+#customers td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Apply responsive styles using media queries */
+@media (max-width: 768px) {
+  #customers {
+    font-size: 12px;
+  }
+
+  #customers th,
+  #customers td {
+    padding: 8px;
+  }
+}
+
+/* Styles for the bottom container */
+#bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+/* Apply responsive styles for the bottom container */
+@media (max-width: 768px) {
+  #bottom {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 5px;
+    padding: 5px 8px;
+    width: auto;
+  }
+}

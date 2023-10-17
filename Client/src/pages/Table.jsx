@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import "./table.css";
 import axios from "axios";
 import Checkbox from "@mui/material/Checkbox";
 import UpdateModal from "./UpdateModal";
